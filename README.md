@@ -1,5 +1,7 @@
-Pris Roos.
+Suzana Setiawan
+Architecture & Interior design planning
 
-Born January, 1984
-Contact: info@prisroos.com
-Telephone: +31(0)6 11024429
+Contact:
+suzana.setiawan@gmail.com
++62 81 241 25 999
++62 31 77170 888
