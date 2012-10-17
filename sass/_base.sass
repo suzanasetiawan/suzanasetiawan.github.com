@@ -1,0 +1,44 @@
+// Compass imports & mixins
+@import "compass"
+@import "compass/reset"
+
+=data-uri-bg($image, $properties: false)
+  @if $properties != false
+    background: inline-image($image) $properties
+    *background: url($image) $properties
+  @else
+    background: inline-image($image)
+    *background: url($image)
+
+=retina-image($image, $ext, $resolution, $properties: false)
+  background: url(../images/#{$image}.#{$ext}) $properties
+  @media only screen and (-webkit-device-pixel-ratio: 2)
+    background: url(../images/#{$image}_2x.#{$ext}) $properties
+    background-size: $resolution
+
+@mixin fleximage
+  max-width: 100%
+  width: 100%
+  height: auto
+
+@mixin italicFont
+  font-family: Georgia, serif
+  font-style: italic
+
+// Variable
+$fontFamily: Georgia, serif
+$sansFont: Antic, arial, helvetica, sans-serif
+$swirlFont: 'Dr Sugiyama', cursive
+
+$altColor: #3097e7
+$fontColor: #333
+
+::-moz-selection
+  background: $fontColor
+  color: #fff
+  text-shadow: none
+
+::selection
+  background: $fontColor
+  color: #fff
+  text-shadow: none
